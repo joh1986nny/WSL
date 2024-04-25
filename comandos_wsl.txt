@@ -1,0 +1,43 @@
+#########################
+## COMANDOS BASICO WSL ##
+#########################
+
+
+# Listar distribuciones disponibles
+wsl --list --online
+
+# Listar distribuciones Linux instaladas
+wsl --list --verbose
+
+# Instalar una distribucion
+wsl --install -d <distribucion>
+
+# Desinstalar una distribucion
+wsl --unregister <distribucion>
+
+# Establecimiento de la distribución de Linux predeterminada
+wsl --set-default <distrubucion>
+
+# Ejecución de una distribución de Linux específica
+wsl --distribution <distribución>
+
+# Actualización de WSL
+wsl --update
+
+# Comprobación del estado de WSL
+wsl --status
+
+# Comprobación de la versión de WSL
+wsl --version
+
+# Apagar una distribución en uso
+wsl --terminate <distribución>
+
+# Identificar la dirección IP
+wsl hostname -i 
+
+# Exportar una distribución
+wsl --export <ditribucion> <FileName>
+
+# Importar una distribución
+wsl --import <distrubucion> <InstallLocation> <FileName>
